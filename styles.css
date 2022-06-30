@@ -1,0 +1,154 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --veryDarkBlue: rgb(23, 30, 40);
+  --orange: hsl(25, 97%, 53%);
+  --black: rgb(20, 21, 25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--black);
+  font-family: "Overpass", sans-serif;
+  color: var(--white);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle at top,
+    var(--darkBlue),
+    var(--veryDarkBlue)
+  );
+  border-radius: 30px;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+
+.box img.star {
+  position: relative;
+  height: fit-content;
+  left: 25px;
+  top: 25px;
+  background-color: var(--darkBlue);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.text {
+  margin: 10px;
+  padding: 15px;
+}
+
+.text h1 {
+  margin: 20px 0px;
+}
+
+.radios {
+  display: flex;
+  justify-content: space-around;
+}
+
+.radios label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkBlue);
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--mediumGrey);
+  margin: 30px 0px;
+}
+
+.radios label:hover {
+  cursor: pointer;
+  background-color: var(--mediumGrey);
+  color: var(--white);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+#btnSubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 320px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: var(--orange);
+  position: relative;
+  margin: auto;
+}
+
+#btnSubmit:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+/* MOVIMIENTO DE PÁGINA */
+
+/* .pagina {
+  position: relative;
+  top: -100%;
+} */
+
+.image-container img {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.text p.puntaje-final {
+  text-align: center;
+  background-color: var(--darkBlue);
+  color: var(--orange);
+  width: 230px;
+  margin: auto;
+  padding: 5px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.text h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-thanks {
+  color: var(--mediumGrey);
+}
+
+/* PROBLEMAS CON EL CENTRADO
+Revisar el centrado de los números y los textos 
+dentro de los botones y en el puntaje final
+ */
+
+/* Lograr el desplazamiento de forma horizontal
+ el problema está en la imagen que rompe el flexbox */

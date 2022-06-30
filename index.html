@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="pagina">
+          <img src="images/icon-star.svg" class="star" alt="" />
+          <div class="text">
+            <h1>¿Cómo lo hicimos?</h1>
+            <p>
+              Por favor haznos saber cómo nos fue en tu petición de asistencia.
+              Toda devolución es bienvenida para ayudarnos a mejorar nuestro
+              servicio.
+            </p>
+
+            <div class="radios">
+              <input type="radio" id="1" name="valor" />
+              <label for="1" class="puntaje">1</label>
+              <input type="radio" id="2" name="valor" />
+              <label for="2" class="puntaje">2</label>
+              <input type="radio" id="3" name="valor" />
+              <label for="3" class="puntaje">3</label>
+              <input type="radio" id="4" name="valor" />
+              <label for="4" class="puntaje">4</label>
+              <input type="radio" id="5" name="valor" />
+              <label for="5" class="puntaje">5</label>
+            </div>
+            <p id="btnSubmit">Enviar</p>
+          </div>
+          <div class="fin">
+            <div class="image-container">
+              <img
+                src="images/illustration-thank-you.svg"
+                alt="agradecimiento"
+              />
+            </div>
+            <div class="text">
+              <p class="puntaje-final">
+                Seleccionaste <span id="valor-final">0</span> de 5
+              </p>
+              <h2>¡Muchas Gracias!</h2>
+              <p class="text-thanks">
+                Verdaderamente apreciamos que te hayas tomado el tiempo de
+                valorar nuestro trabajo. Si necesitas más asistencia, no dudes
+                en ponerte en contacto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
